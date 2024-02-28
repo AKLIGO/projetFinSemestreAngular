@@ -1,0 +1,14 @@
+.centered-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-left: 250px;
+}
+
+.forms-sample {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: 0 auto;
+}

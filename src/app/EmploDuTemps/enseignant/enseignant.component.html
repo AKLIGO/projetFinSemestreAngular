@@ -1,0 +1,55 @@
+
+
+
+<div class="center-container">
+  <form class="forms-sample" #addForm="ngForm" (ngSubmit)="oneAjouterEnseignant(addForm)">
+
+<div class="form-group row">
+    <label for="nom" class="col-sm-3 col-form-label">Nom</label>
+    <div class="col-sm-9">
+      <input type="text" ngModel name="nom" class="form-control" id="nom" placeholder="nom">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="prenom" class="col-sm-3 col-form-label">Prenom</label>
+    <div class="col-sm-9">
+      <input type="text" ngModel name="prenom" class="form-control" id="prenom" placeholder="prenom">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="telephone" class="col-sm-3 col-form-label">Telephone</label>
+    <div class="col-sm-9">
+      <input type="text" ngModel name="telephone" class="form-control" id="telephone" placeholder="telephone">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="email" class="col-sm-3 col-form-label">Email</label>
+    <div class="col-sm-9">
+      <input type="email" ngModel name="email" class="form-control" id="email" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="matricule" class="col-sm-3 col-form-label">Matricule</label>
+    <div class="col-sm-9">
+      <input type="text" ngModel name="matricule" class="form-control" id="matricule" placeholder="matricule">
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <label for="matiere" class="col-sm-3 col-form-label">Matiere</label>
+    <div class="col-sm-9">
+      <input type="text" ngModel name="matiere" class="form-control" id="matiere" placeholder="matiere">
+    </div>
+  </div>
+
+
+  <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary mr-2">Submit</button>
+
+</form>
+</div>
+

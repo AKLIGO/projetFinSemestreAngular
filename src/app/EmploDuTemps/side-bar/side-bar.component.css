@@ -1,0 +1,14 @@
+
+.link-noir {
+  color: black; /* Définit la couleur du texte en noir */
+  text-decoration: none; /* Optionnel: supprime le soulignement des liens */
+}
+
+/* Pour changer la couleur lors du survol du lien */
+.link-noir:hover {
+  color: gray; /* Couleur lors du survol, ici gris pour l'exemple */
+}
+
+.sub-menu .nav-item {
+  margin-left: 20px; /* Décale les éléments du sous-menu vers la droite */
+}

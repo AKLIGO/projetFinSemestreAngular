@@ -1,0 +1,12 @@
+.container-center {
+  flex: 1;
+  max-width: 90%;
+  overflow: auto;
+  margin-left:50%;
+  margin-top: 40%
+}
+
+.project-orders-table th,td {
+  padding-left: 40px; /* Augmente l'espacement à gauche */
+  padding-right: 40px; /* Augmente l'espacement à droite */
+}

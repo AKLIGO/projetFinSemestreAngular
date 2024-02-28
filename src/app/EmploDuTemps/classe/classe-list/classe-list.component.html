@@ -1,0 +1,43 @@
+<h2>Liste des classes</h2>
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <div class="table-responsive pt-3">
+        <table class="table table-striped project-orders-table" >
+          <thead>
+            <tr>
+
+              <th>Code</th>
+              <th>Intitule</th>
+
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let classe of listeClasse">
+            <tr>
+
+              <td>{{classe.code}}</td>
+              <td>{{classe.intitule}}</td>
+
+              <td>
+                <div class="d-flex align-items-center">
+                  <button type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
+                    Edit
+                    <i class="typcn typcn-edit btn-icon-append"></i>
+                  </button>
+                  <button type="button" (click)="deleteClasse(classe.id)" class="btn btn-danger btn-sm btn-icon-text">
+                    Delete
+                    <i class="typcn typcn-delete-outline btn-icon-append"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
